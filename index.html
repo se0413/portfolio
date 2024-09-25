@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <section class="main" id="skip_main">
+        <section class="main" data-menu="main">
             <h1>main</h1>
             <div class="m_box">
                 <div class="m_ico">
@@ -28,25 +28,25 @@
                 </div>
             </div>
         </section>
-        <aside class="quick">
+        <aside class="quick header">
             <div class="quick_ctn">
                 <ul>
-                    <li class="q01">
-                        <a href="#skip_main"><span>MAIN</span></a>
+                    <li class="q01" data-link="main">
+                        <a href="#n"><span>MAIN</span></a>
                     </li>
-                    <li class="q02">
-                        <a href="#skip_iam"><span>I AM</span></a>
+                    <li class="q02" data-link="iam">
+                        <a href="#n"><span>I AM</span></a>
                     </li>
-                    <li class="q03">
-                        <a href="#skip_web"><span>WEB</span></a>
+                    <li class="q03" data-link="web">
+                        <a href="#n"><span>WEB</span></a>
                     </li>
-                    <li class="q04">
-                        <a href="#skip_design"><span>DESIGN</span></a>
+                    <li class="q04"  data-link="design">
+                        <a href="#n"><span>DESIGN</span></a>
                     </li>
                 </ul>
             </div>
         </aside>
-        <section class="iam" id="skip_iam">
+        <section class="iam" data-menu="iam">
             <h1>iam</h1>
             <div class="i_txt">
                 <div class="i_title">
@@ -142,7 +142,7 @@
                 </div>
             </div>
         </section>
-        <section class="web" id="skip_web">
+        <section class="web" data-menu="web">
             <h1>web</h1>
             <div class="w_txt">
                 <div class="w_title">
@@ -167,11 +167,11 @@
                                 <li class="c4">c4</li>
                             </ul>
                         </div>
-                        <strong class="link"><a href="coxeaquarium/index.html" target="_blank" title="새창열림">홈페이지보기</a></strong>
+                        <strong class="link"><a href="coxeaquarium/index.html" target="_blank" title="새창열림">메인홈페이지보기</a></strong>
                     </div>
                     <div class="photo">
-                        <div class="photo_1"><img src="portfolio/images/coex_1.png" alt="코엑스 아쿠아리움 디자인"></div>
-                        <div class="photo_2"><img src="portfolio/images/coex_2.png" alt="코엑스 아쿠아리움 디자인"></div>
+                        <div class="photo_1"><a href="coxeaquarium/index.html" target="_blank" title="새창열림"><img src="portfolio/images/coex_1.png" alt="코엑스 아쿠아리움 디자인"></a></div>
+                        <div class="photo_2"><a href="coxeaquarium/index.html" target="_blank" title="새창열림"><img src="portfolio/images/coex_2.png" alt="코엑스 아쿠아리움 디자인"></a></div>
                     </div>
                 </div>
                 <div class="camoa">
@@ -191,11 +191,11 @@
                                 <li class="c5">c5</li>
                             </ul>
                         </div>
-                        <strong class="link"><a href="cheonan_museum_of_art/index.html" target="_blank" title="새창열림">홈페이지보기</a></strong>
+                        <strong class="link"><a href="cheonan_museum_of_art/index.html" target="_blank" title="새창열림">메인홈페이지보기</a></strong>
                     </div>
                     <div class="photo">
-                        <div class="photo_1"><img src="portfolio/images/camoa_1.png" alt="천안시립미술관 디자인"></div>
-                        <div class="photo_2"><img src="portfolio/images/camoa_2.png" alt="천안시립미술관 디자인"></div>
+                        <div class="photo_1"><a href="cheonan_museum_of_art/index.html" target="_blank" title="새창열림"><img src="portfolio/images/camoa_1.png" alt="천안시립미술관 디자인"></a></div>
+                        <div class="photo_2"><a href="cheonan_museum_of_art/index.html" target="_blank" title="새창열림"><img src="portfolio/images/camoa_2.png" alt="천안시립미술관 디자인"></a></div>
                     </div>
                 </div>
                 <div class="hope">
@@ -214,12 +214,15 @@
                                 <li class="c4">c4</li>
                             </ul>
                         </div>
-                        <strong class="link"><a href="hope_foundation/index.html" target="_blank" title="새창열림">홈페이지보기</a></strong>
+                        <div class="h_link">
+                            <strong class="link"><a href="hope_foundation/index.html" target="_blank" title="새창열림">메인홈페이지보기</a></strong>
+                            <strong class="link_2"><a href="hope_foundation/contents/intro.html" target="_blank" title="새창열림">서브페이지보기</a></strong>
+                        </div>
                     </div>
                     <div class="photo">
-                        <div class="photo_1"><img src="portfolio/images/hope_1.png" alt="한국농어촌희망재단 디자인"></div>
-                        <div class="photo_2"><img src="portfolio/images/hope_2.png" alt="한국농어촌희망재단 디자인"></div>
-                        <div class="photo_3"><img src="portfolio/images/hope_3.png" alt="한국농어촌희망재단 디자인"></div>
+                        <div class="photo_1"><a href="hope_foundation/index.html" target="_blank" title="새창열림"><img src="portfolio/images/hope_1.png" alt="한국농어촌희망재단 디자인"></a></div>
+                        <div class="photo_2"><a href="hope_foundation/index.html" target="_blank" title="새창열림"><img src="portfolio/images/hope_2.png" alt="한국농어촌희망재단 디자인"></a></div>
+                        <div class="photo_3"><a href="hope_foundation/index.html" target="_blank" title="새창열림"><img src="portfolio/images/hope_3.png" alt="한국농어촌희망재단 디자인"></a></div>
                     </div>
                 </div>
                 <div class="samcheck">
@@ -237,7 +240,7 @@
                                 <li class="c3">c3</li>
                             </ul>
                         </div>
-                        <strong class="link"><a href="samcheck/index.html" target="_blank" title="새창열림">홈페이지보기</a></strong>
+                        <strong class="link"><a href="#n" target="_blank" title="새창열림">홈페이지 준비중</a></strong>
                     </div>
                     <div class="photo">
                         <div class="photo_1"><img src="portfolio/images/samcheck_2.png" alt="삼척시청 디자인"></div>
@@ -246,7 +249,7 @@
                 </div>
             </div>
         </section>
-        <section class="design" id="skip_design">
+        <section class="design" data-menu="design">
             <h1>design</h1>
             <div class="w_txt">
                 <div class="w_title">

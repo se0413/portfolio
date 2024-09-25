@@ -516,13 +516,21 @@
 .web .w_list .hope .h_inner .color ul li.c4 {
     background-color: #C8B6A0;
 }
-.web .w_list .hope .h_inner .link a {
+.web .w_list .hope .h_inner .h_link {
+    display: flex;
+}
+.web .w_list .hope .h_inner .link {
+    margin-right: 15px;
+}
+.web .w_list .hope .h_inner .link a,
+.web .w_list .hope .h_inner .link_2 a {
     font-size: 20px;
     padding: 10px 20px;
     border: 1px solid #20231F;
     transition: 0.5s;
 }
-.web .w_list .hope .h_inner .link a:hover {
+.web .w_list .hope .h_inner .link a:hover,
+.web .w_list .hope .h_inner .link_2 a:hover {
     background-color: #20231F;
     color: #fff;
 }
