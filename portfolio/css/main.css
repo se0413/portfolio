@@ -628,6 +628,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    width: 375px;
 }
 .web .w_list .samcheck .photo_1 {
     position: absolute;
