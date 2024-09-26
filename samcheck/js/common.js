@@ -19,10 +19,10 @@ $(document).ready(function(){
     })
 
 
-    $('header').on('mouseenter focusin', function(){
+    $('header_sub').on('mouseenter focusin', function(){
         $(this).addClass('fixed')
     })
-    $('header').on('mouseleave', function(){
+    $('header_sub').on('mouseleave', function(){
         //마우스를 아웃했을때 fixed 클래스를 삭제하는 건 맨 상단에 있을때만 가능
         if(scrolling <= 0){
             $(this).removeClass('fixed')
@@ -47,7 +47,7 @@ $(document).ready(function(){
         if(pc_mobile == 'pc'){
             $('header .gnb .gnb_wrap ul.depth1 > li').removeClass('on')
             $(this).addClass('on')
-            $('.header_sub').addClass('fixed')
+            $('.header_sub').addClass('menu_over')
         }
     })
     $('header .gnb .gnb_wrap ul.depth1 > li:last-child > ul.depth2 > li:last-child > a').on('focusout', function(){
@@ -60,7 +60,7 @@ $(document).ready(function(){
         if(pc_mobile == 'pc'){
             $('header .gnb .gnb_wrap ul.depth1 > li').removeClass('on')
             $(this).removeClass('on')
-            $('.header_sub').removeClass('fixed')
+            $('.header_sub').removeClass('menu_over')
         }
     })
 
@@ -72,23 +72,4 @@ $(document).ready(function(){
     });
     
 
-    //header .gnb .gnb_open, header .gnb .gnb_close
-    $('header .gnb .gnb_open').on('click', function(e){
-        $('header').addClass('menu_open')
-        $("html, body").css({overflow : "hidden", height : $(window).height()}).bind("scroll touchmove mousewheel", function(e){e.preventDefault();e.stopPropagation();return false;},function(){passive:false});
-    })
-    $('header .gnb .gnb_close').on('click', function(){
-        $('header').removeClass('menu_open')
-        $("html, body").css({overflow : "visible", height : "auto"}).unbind('scroll touchmove mousewheel');
-    })
-
-    //footer famillysite
-    $('footer .famillysite button.btn_open').on('click', function(){
-        $('footer .famillysite').addClass('open')
-        $('footer .famillysite ul').slideDown()
-    })
-    $('footer .famillysite button.btn_close').on('click', function(){
-        $('footer .famillysite').removeClass('open')
-        $('footer .famillysite ul').slideUp()
-    })
 })

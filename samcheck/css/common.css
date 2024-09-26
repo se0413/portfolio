@@ -11,7 +11,7 @@ html, body{
 }
 #wrap{ /* 홈페이지 전체를 감싸는 요소 - 가로 스크롤바가 생겼을때 짤리는 현상 막음, #=id */
     min-width: 1260px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 .wrapper {/* 홈페이지 넓이 제한, 가운데 정렬 */
     /* width: 1300px; /* 좌우 양사이드 20px의 여백을 줄꺼라 1260+20*

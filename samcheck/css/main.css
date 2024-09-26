@@ -3,6 +3,9 @@
 @import url(common.css);
 @import url(layout.css);
 
+.top_group {
+    margin: 15px 0;
+}
 .top_group .wrapper {
     display: flex;
     justify-content: center;
@@ -36,20 +39,41 @@
 }
 .top_group .t_box .search_box input[type="submit"] {
     width: 70px;
-    height: 70px;
+    height: 67px;
     border: 0;
     font-size: 0;
     line-height: 0;
-    border-radius: 15px 12px 15px 0;
+    border-radius: 15px 11px 11px 0;
     background-color: #0074E5;
     cursor: pointer;
+}
+.top_group .t_box .p_word ul {
+    display: flex;
+}
+.top_group .t_box .p_word ul li {
+    color: rgba(85, 85, 85, 0.6);
+    margin: 15px;
+}
+.top_group .t_box .p_word ul li:nth-child(1) {
+    color: #0074E5;
 }
 .top_group .weather {
     display: flex;
     align-items: center;
+    margin-left: 50px;
 }
 .top_group .weather .photo {
     margin-right: 30px;
+    position: relative;
+}
+.top_group .weather .photo::before {
+    position: absolute;
+    right: -17px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(221, 221, 221, 0.6);
+    content: "";
 }
 .top_group .weather em {
     display: block;
