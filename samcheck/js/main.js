@@ -2,7 +2,7 @@ $(document).ready(function(){
     const popup_swiper = new Swiper('.popup .swiper', { 
 
         autoplay: { 
-            delay: 5000000,
+            delay: 5000,
             disableOnInteraction: true,
         },
 
