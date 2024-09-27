@@ -13,27 +13,24 @@ $(document).ready(function(){
             scroll_top = 0
         }
         scrolling = $(window).scrollTop()
-       //console.log(scroll_top)
     }
 
     function resize_chk(){
         window_w = $(window).width()
-        //console.log(window_w)
         if(window_w > mobile_size){ //pc 일때
             pc_mobile = 'pc'
         }else{ // mobile 일때
             pc_mobile = 'mobile'
         }
-        //console.log(pc_mobile)
     }
-    resize_chk()// 로딩될때 한번
+    resize_chk()
     $(window).resize(function(){
         resize_chk()
     })
 
-    scroll_chk() //로딩되었을때 1번실행
+    scroll_chk() 
     $(window).scroll(function(){
-        scroll_chk() //스크롤할때마다 1번 실행
+        scroll_chk() 
     })
 
    
@@ -55,8 +52,8 @@ $(document).ready(function(){
     })
 
     $('header .gnb .gnb_wrap .depth1 > li > a ').on('click', function(e){
-        if(pc_mobile == 'mobile'){ //모바일에서만 작동
-            e.preventDefault(); //1차의 href 값을 무력화 (클릭해도 해당페이지를 이동되지 않게 함)
+        if(pc_mobile == 'mobile'){ 
+            e.preventDefault(); 
             $(this).parent().toggleClass('open')
         }
     })

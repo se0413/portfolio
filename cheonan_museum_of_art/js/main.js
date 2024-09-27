@@ -104,8 +104,8 @@ $(document).ready(function(){
     let goldfish_h2
 
     function scroll_chk(){
-        window_h = $(window).height() //브라우저높이
-        scrolling = $(window).scrollTop() //스크롤된 값
+        window_h = $(window).height() 
+        scrolling = $(window).scrollTop() 
         info_top =$('.info').offset().top
         news_top = $('.news').offset().top
         exhibition_top = $('.exhibition').offset().top

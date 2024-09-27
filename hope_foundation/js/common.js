@@ -23,7 +23,6 @@ $(document).ready(function(){
         $(this).addClass('fixed')
     })
     $('header').on('mouseleave', function(){
-        //마우스를 아웃했을때 fixed 클래스를 삭제하는 건 맨 상단에 있을때만 가능
         if(scrolling <= 0){
             $(this).removeClass('fixed')
         }
@@ -36,7 +35,6 @@ $(document).ready(function(){
         }else{
             $('header').removeClass('fixed')
         }   
-        // console.log(scrolling)
     }
     scroll_chk()
     $(window).scroll(function(){
@@ -67,7 +65,7 @@ $(document).ready(function(){
 
     $("header .gnb .gnb_wrap ul.depth1 > li > a").on("click", function(e){
         if(pc_mobile == 'mobile'){
-            e.preventDefault();		/* a 태그의 href를 작동 시키지 않음 */
+            e.preventDefault();		
             $(this).parent().toggleClass('open')
         }
     });

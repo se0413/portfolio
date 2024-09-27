@@ -388,6 +388,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-left: 20px;
 }
 .now .tap_area .tap_cnt ul li {
     padding: 20px;
@@ -497,4 +498,51 @@
 }
 .leave .n_tit h2 span {
     color: #0074E5;
+}
+.leave .tap_area .tap_btn ul {
+    display: flex;
+    align-items: center;
+    margin: 30px 0 25px 0;
+}
+.leave .tap_area .tap_btn ul button {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 30px;
+}
+.leave .tap_area .tap_btn ul > li {
+    margin-right: 10px;
+}
+.leave .tap_area .tap_btn ul > li:last-child {
+    padding: 0;
+}
+.leave .tap_area .tap_btn ul > li.active button,
+.leave .tap_area .tap_btn ul > li:hover button {
+    background-color: #0074E5;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.25);
+}
+.leave .tap_area .tap_btn ul a {
+    padding-right: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #0074E5;
+    line-height: 30px;
+    border-bottom: 1px solid #0074E5;
+    position: relative;
+}
+.leave .tap_area .tap_btn ul a::before {
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    width: 10px;
+    height: 10px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='11' height='12' viewBox='0 0 11 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='-0.5' x2='14.5191' y2='-0.5' transform='matrix(0.688749 0.724999 -0.688749 0.724999 0 0.736328)' stroke='%230074E5'/%3E%3C/svg%3E%0A");
+    content: "";
+}
+.leave .tap_area .tap_cnt .swiper {
+    display: flex;
 }

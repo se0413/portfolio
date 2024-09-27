@@ -1,7 +1,7 @@
 $(document).ready(function(){
    
     let scrolling
-    let scroll_top //header 고정 시작 값
+    let scroll_top 
     let window_w
     let mobile_size = 768
     let pc_mobile
@@ -13,27 +13,24 @@ $(document).ready(function(){
             scroll_top = 0
         }
         scrolling = $(window).scrollTop()
-       //console.log(scroll_top)
     }
 
     function resize_chk(){
         window_w = $(window).width()
-        //console.log(window_w)
         if(window_w > mobile_size){ //pc 일때
             pc_mobile = 'pc'
         }else{ // mobile 일때
             pc_mobile = 'mobile'
         }
-        //console.log(pc_mobile)
     }
-    resize_chk()// 로딩될때 한번
+    resize_chk()
     $(window).resize(function(){
         resize_chk()
     })
 
-    scroll_chk() //로딩되었을때 1번실행
+    scroll_chk() 
     $(window).scroll(function(){
-        scroll_chk() //스크롤할때마다 1번 실행
+        scroll_chk() 
     })
 
 	$('header .gnb .btn_open').on('click focusin', function(){
@@ -65,11 +62,11 @@ $(document).ready(function(){
         },500)
     })
 
-    $(window).on('scroll mousemove', function(e){  /* html cursor가 마우스 포인터를 따라다니게 하는 값 */
+    $(window).on('scroll mousemove', function(e){  
         $('.cursor').css('left', e.pageX + 'px');
         $('.cursor').css('top', e.pageY + 'px');
     });
-    $('a').hover(function(){ /* a에 마우스를 올렸을때만 on 클래스 주기 */
+    $('a').hover(function(){ 
         $('.cursor').toggleClass('on');
     });
 })

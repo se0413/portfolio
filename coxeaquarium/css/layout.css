@@ -1,9 +1,9 @@
 .skip_nav {
     position: absolute;
     left: 0;
-    top: -100px; /*포커스가 될때만 나타나야함, 위에 숨겨져 있어야함*/
+    top: -100px; 
     width: 100%;
-    z-index: 9999999999999999999999999999999999;/*꼭 맨 상단*/
+    z-index: 9999999999999999999999999999999999;
 }
 .skip_nav a {
     position: absolute;
