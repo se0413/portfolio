@@ -70,11 +70,29 @@ $(document).ready(function(){
             $(this).parent().toggleClass('open')
         }
     });
-    
-    $('.header_top .tnb_r button.lang_open').click(function(){
-        $('.header_top .tnb_r').addClass('on')
+
+    $('footer .famillysite .f1').on('click', function(){
+        $('footer .famillysite .f_inner > li:nth-child(1)').addClass('on')
     })
-    $('.header_top .tnb_r button.lang_close').click(function(){
-        $('.header_top .tnb_r').removeClass('on')
+    $('footer .famillysite .f5').on('click', function(){
+        $('footer .famillysite .f_inner > li:nth-child(1)').removeClass('on')
+    })
+    $('footer .famillysite .f2').on('click', function(){
+        $('footer .famillysite .f_inner > li:nth-child(2)').addClass('on')
+    })
+    $('footer .famillysite .f6').on('click', function(){
+        $('footer .famillysite .f_inner > li:nth-child(2)').removeClass('on')
+    })
+    $('footer .famillysite .f3').on('click', function(){
+        $('footer .famillysite .f_inner > li:nth-child(3)').addClass('on')
+    })
+    $('footer .famillysite .f7').on('click', function(){
+        $('footer .famillysite .f_inner > li:nth-child(3)').removeClass('on')
+    })
+    $('footer .famillysite .f4').on('click', function(){
+        $('footer .famillysite .f_inner > li:nth-child(4)').addClass('on')
+    })
+    $('footer .famillysite .f8').on('click', function(){
+        $('footer .famillysite .f_inner > li:nth-child(4)').removeClass('on')
     })
 })

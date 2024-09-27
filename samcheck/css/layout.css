@@ -285,8 +285,166 @@ footer .banner {
     background-color: rgba(221, 221, 221, 0.3);
     display: flex;
     color: #555;
+    padding: 20px 0;
+}
+footer .banner .wrapper {
+    display: flex;
+    align-items: center;
 }
 footer .banner strong {
     font-size: 15px;
+    font-weight: 700;
 }
-footer .banner .swiper
+footer .banner .btn_wrap a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+}
+footer .banner .btn_wrap {
+    display: flex;
+    margin-left: 10px;
+}
+footer .banner .btn_wrap a::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_35_2869' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_35_2869)'%3E%3Cpath d='M4.5 17.269C4.35833 17.269 4.23958 17.221 4.14375 17.125C4.04792 17.029 4 16.9101 4 16.7682C4 16.6264 4.04792 16.5077 4.14375 16.4122C4.23958 16.3167 4.35833 16.269 4.5 16.269H19.5C19.6417 16.269 19.7604 16.317 19.8562 16.413C19.9521 16.5088 20 16.6277 20 16.7697C20 16.9116 19.9521 17.0302 19.8562 17.1257C19.7604 17.2212 19.6417 17.269 19.5 17.269H4.5ZM4.5 12.4997C4.35833 12.4997 4.23958 12.4517 4.14375 12.3557C4.04792 12.2597 4 12.1408 4 11.999C4 11.8571 4.04792 11.7385 4.14375 11.643C4.23958 11.5475 4.35833 11.4997 4.5 11.4997H19.5C19.6417 11.4997 19.7604 11.5477 19.8562 11.6437C19.9521 11.7397 20 11.8586 20 12.0005C20 12.1423 19.9521 12.261 19.8562 12.3565C19.7604 12.452 19.6417 12.4997 19.5 12.4997H4.5ZM4.5 7.73047C4.35833 7.73047 4.23958 7.68247 4.14375 7.58647C4.04792 7.49064 4 7.37172 4 7.22972C4 7.08789 4.04792 6.96922 4.14375 6.87372C4.23958 6.77822 4.35833 6.73047 4.5 6.73047H19.5C19.6417 6.73047 19.7604 6.77847 19.8562 6.87447C19.9521 6.97047 20 7.08939 20 7.23122C20 7.37305 19.9521 7.49172 19.8562 7.58722C19.7604 7.68272 19.6417 7.73047 19.5 7.73047H4.5Z' fill='%23555555'/%3E%3C/g%3E%3C/svg%3E%0A");
+    content: "";
+}
+footer .banner .btn_wrap button {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+}
+footer .banner .btn_wrap button::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+footer .banner .btn_wrap button.btn_prev::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_35_2872' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_35_2872)'%3E%3Cpath d='M12.8028 15.1116L10.1261 12.4346C10.0644 12.3731 10.0169 12.3066 9.98359 12.2353C9.95026 12.164 9.93359 12.0856 9.93359 12.0001C9.93359 11.9146 9.95026 11.8361 9.98359 11.7648C10.0169 11.6935 10.0644 11.627 10.1261 11.5653L12.8033 8.88806C12.8402 8.85123 12.8831 8.82031 12.9321 8.79531C12.9809 8.77031 13.0333 8.75781 13.0891 8.75781C13.2009 8.75781 13.2972 8.79481 13.3778 8.86881C13.4587 8.94281 13.4991 9.0404 13.4991 9.16156V14.8386C13.4991 14.9597 13.4578 15.0573 13.3753 15.1313C13.2928 15.2053 13.1966 15.2423 13.0866 15.2423C13.0591 15.2423 12.9645 15.1987 12.8028 15.1116Z' fill='%23555555'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+footer .banner .btn_wrap button.btn_next::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_35_2875' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect x='24' y='24' width='24' height='24' transform='rotate(-180 24 24)' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_35_2875)'%3E%3Cpath d='M11.1972 8.88844L13.8739 11.5654C13.9356 11.6269 13.9831 11.6934 14.0164 11.7647C14.0497 11.836 14.0664 11.9144 14.0664 11.9999C14.0664 12.0854 14.0497 12.1639 14.0164 12.2352C13.9831 12.3065 13.9356 12.373 13.8739 12.4347L11.1967 15.1119C11.1598 15.1488 11.1169 15.1797 11.0679 15.2047C11.0191 15.2297 10.9667 15.2422 10.9109 15.2422C10.7991 15.2422 10.7028 15.2052 10.6222 15.1312C10.5413 15.0572 10.5009 14.9596 10.5009 14.8384L10.5009 9.16144C10.5009 9.04027 10.5422 8.94269 10.6247 8.86869C10.7072 8.79469 10.8034 8.75769 10.9134 8.75769C10.9409 8.75769 11.0355 8.80127 11.1972 8.88844Z' fill='%23555555'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+footer .banner .swiper ul li {
+    text-align: center;
+}
+footer .famillysite {
+    background: linear-gradient(90deg, #0074E5, #10477C);
+}
+footer .famillysite .wrapper .f_inner {
+    display: flex;
+    justify-content: center;
+}
+footer .famillysite .wrapper .f_inner > li {
+    width: 100%;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+footer .famillysite button {
+    padding: 15px 250px 15px 20px;
+    color: #fff;
+    position: relative;
+    white-space: nowrap;
+}
+footer .famillysite button::before {
+    position: absolute;
+    right: 12px;
+    top: 13px;
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+footer .famillysite button.btn_open::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_35_2878' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect y='24' width='24' height='24' transform='rotate(-90 0 24)' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_35_2878)'%3E%3Cpath d='M15.1116 11.1962L12.4346 13.8729C12.3731 13.9346 12.3066 13.9821 12.2353 14.0154C12.164 14.0488 12.0856 14.0654 12.0001 14.0654C11.9146 14.0654 11.8361 14.0488 11.7648 14.0154C11.6935 13.9821 11.627 13.9346 11.5653 13.8729L8.88806 11.1957C8.85123 11.1588 8.82031 11.1159 8.79531 11.0669C8.77031 11.0181 8.75781 10.9658 8.75781 10.9099C8.75781 10.7981 8.79481 10.7018 8.86881 10.6212C8.94281 10.5403 9.0404 10.4999 9.16156 10.4999L14.8386 10.4999C14.9597 10.4999 15.0573 10.5412 15.1313 10.6237C15.2053 10.7062 15.2423 10.8024 15.2423 10.9124C15.2423 10.9399 15.1987 11.0345 15.1116 11.1962Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+footer .famillysite button.btn_close::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_35_2878' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='24'%3E%3Crect x='24' width='24' height='24' transform='rotate(90 24 0)' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_35_2878)'%3E%3Cpath d='M8.88844 12.8038L11.5654 10.1271C11.6269 10.0654 11.6934 10.0179 11.7647 9.98457C11.836 9.95124 11.9144 9.93457 11.9999 9.93457C12.0854 9.93457 12.1639 9.95124 12.2352 9.98457C12.3065 10.0179 12.373 10.0654 12.4347 10.1271L15.1119 12.8043C15.1488 12.8412 15.1797 12.8841 15.2047 12.9331C15.2297 12.9819 15.2422 13.0342 15.2422 13.0901C15.2422 13.2019 15.2052 13.2982 15.1312 13.3788C15.0572 13.4597 14.9596 13.5001 14.8384 13.5001L9.16144 13.5001C9.04027 13.5001 8.94269 13.4588 8.86869 13.3763C8.79469 13.2938 8.75769 13.1976 8.75769 13.0876C8.75769 13.0601 8.80127 12.9655 8.88844 12.8038Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+footer .famillysite button.btn_close {
+    display: none;
+}
+footer .famillysite .f_inner li.on button.btn_close {
+    display: block;
+}
+footer .famillysite .f_inner li.on button.btn_open {
+    display: none;
+}
+footer .famillysite .f_menu {
+    position: relative;
+}
+footer .famillysite .f_menu ul {
+    display: none;
+}
+footer .famillysite .f_inner li.on .f_menu ul {
+    position: absolute;
+    left: 0;
+    bottom: 47px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #0074E5;
+    z-index: 10;
+}
+footer .famillysite .f_menu ul li {
+    width: calc(50% - 10px);
+    line-height: 30px;
+}
+footer .f_txt {
+    background-color: #1d1d1d;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 40px 0 140px 0;
+}
+footer .f_txt .f_nav ul {
+    display: flex;
+    margin-bottom: 30px;
+}
+footer .f_txt .f_nav ul li {
+    padding-right: 20px;
+    position: relative;
+}
+footer .f_txt .f_nav ul li:first-child {
+    color: rgba(255, 255, 255, 0.8);
+}
+footer .f_txt .f_nav ul li::before {
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    width: 1px;
+    height: 9px;
+    background-color: rgba(255, 255, 255, 0.2);
+    content: "";
+}
+footer .f_txt .f_nav ul li:last-child:before {
+    display: none;
+}
+footer .f_txt .f_list .call {
+    display: block;
+    margin: 10px 0;
+}
+footer .f_txt .copyright {
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 55px;
+}

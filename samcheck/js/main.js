@@ -51,4 +51,30 @@ $(document).ready(function(){
             prevEl: '.btn_prev',
         },
     });
+    const banner_cnt_swiper = new Swiper('.banner .swiper', { 
+        spaceBetween: 16, 
+        breakpoints: {
+            640: {  
+                spaceBetween: 30, 
+                slidesPerView: 4,
+
+            },
+            1024: {
+                spaceBetween: 40,
+                slidesPerView: 6,
+
+            },
+            1300: {
+                spaceBetween: 40,
+                slidesPerView: 6,
+
+            },
+        },
+        centeredSlides: false, 
+        loop: true,  
+        navigation: {
+            nextEl: '.btn_next',
+            prevEl: '.btn_prev',
+        },
+    });
 })
