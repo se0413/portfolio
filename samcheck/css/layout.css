@@ -281,3 +281,12 @@ header {
 .header_sub .navgnb .depth3 li a:hover {
     color: #0074E5;
 }
+footer .banner {
+    background-color: rgba(221, 221, 221, 0.3);
+    display: flex;
+    color: #555;
+}
+footer .banner strong {
+    font-size: 15px;
+}
+footer .banner .swiper
