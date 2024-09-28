@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <script src="../portfolio_2/js/jquery-3.7.1.min.js"></script>
     <script src="../portfolio_2/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="../portfolio_2/css/main.css">
     <title>포트폴리오</title>
 </head>
@@ -27,45 +28,237 @@
             </div>
         </header>
         <div class="container">
-            <div class="swiper"> 
-                <div class="swiper-wrapper"> 
-                    <div class="swiper-slide">
-                        <section class="main" data-menu="main">
-                            <div class="inner">
-                                <div class="main_tit">
-                                    <h1>
-                                        <span class="m">M</span>
-                                        <span class="y">y</span><br>
-                                        <span class="p">P</span>
-                                        <span class="a">a</span>
-                                        <span class="l">l</span>
-                                        <span class="e1">e</span>
-                                        <span class="t1">t</span>
-                                        <span class="t2">t</span>
-                                        <span class="e2">e</span>
-                                    </h1>
-                                </div>
-                                <div class="sub_tit">
-                                    <strong>web design<br>web publishing</strong>
-                                </div>
-                            </div>
-                        </section>
-                    </div> 
-                    <div class="swiper-slide">
-                        <section class="iam" data-menu="iam">
-                            <div class="inner"></div>
-                                <div class="iam_tit">
-                                    <h2 class="s_txt">I AM</h2>
-                                    <h2 class="b_txt">I AM</h2>
-                                </div>
-                                <div class="profile">
-                                    <div class="photo"><img src="images/my_photo.png"></div>
-                                </div>
-                            </div>
-                        </section>
-                    </div> 
+            <section class="main" data-menu="main">
+                <div class="inner" data-aos="fade-up">
+                    <div class="main_tit">
+                        <h1>
+                            <span class="m">M</span>
+                            <span class="y">y</span><br>
+                            <span class="p">P</span>
+                            <span class="a">a</span>
+                            <span class="l">l</span>
+                            <span class="e1">e</span>
+                            <span class="t1">t</span>
+                            <span class="t2">t</span>
+                            <span class="e2">e</span>
+                        </h1>
+                    </div>
+                    <div class="sub_tit">
+                        <strong>web design<br>web publishing</strong>
+                    </div>
                 </div>
-            </div>
+            </section>
+            <section class="iam" data-menu="iam">
+                <div class="inner">
+                    <div class="wrapper">
+                        <div class="iam_tit">
+                            <h2 class="s_txt">I AM</h2>
+                            <h2 class="b_txt">I AM</h2>
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <div class="wrapper">
+                            <div class="p_l" data-aos="fade-right">
+                                <div class="photo"><img src="images/my_photo.png"></div>
+                                <div class="design_txt">
+                                    <strong></strong><span>디자인은</span><span class="i">아이디어</span>
+                                </div>
+                                <div class="coding_txt">
+                                    <strong></strong><span>코딩은</span><span class="i">퍼즐</span>
+                                </div>   
+                            </div>
+                            <div class="p_r" data-aos="fade-left">
+                                <div class="r_1">
+                                    <div class="my">
+                                        <h3><span>Profile</span></h3>
+                                        <ul>
+                                            <li>
+                                                <strong>이름</strong>
+                                                <span>황시은</span>
+                                            </li>
+                                            <li>
+                                                <strong>생년월일</strong>
+                                                <span>1999.04.13</span>
+                                            </li>
+                                            <li>
+                                                <strong>연락처</strong>
+                                                <span>010-6348-0771</span>
+                                            </li>
+                                            <li>
+                                                <strong>이메일</strong>
+                                                <span>tldms7133@naver.com</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="certificate">
+                                        <h3><span>Certificate</span></h3>
+                                        <ul>
+                                            <li>
+                                                <strong>2020.04</strong>
+                                                <span>미술심리상담지도사1급</span>
+                                            </li>
+                                            <li>
+                                                <strong>2021.02</strong>
+                                                <span>작업치료사</span>
+                                            </li>
+                                            <li>
+                                                <strong>2021.03</strong>
+                                                <span>병원코디네이터CS</span>
+                                            </li>
+                                            <li>
+                                                <strong>2024.07</strong>
+                                                <span>GTQ포토샵1급</span>
+                                            </li>
+                                            <li>
+                                                <strong>2024.09</strong>
+                                                <span>웹디자인기능사</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="r_2">
+                                    <div class="education">
+                                        <h3><span>Education</span></h3>
+                                        <ul>
+                                            <li>
+                                                <strong>2018.02</strong>
+                                                <span>주성고등학교 이과계열 졸업</span>
+                                            </li>
+                                            <li>
+                                                <strong>2021.02</strong>
+                                                <span>충북보건과학대학교 작업치료과 졸업</span>
+                                            </li>
+                                            <li>
+                                                <strong>2024.04 ~ 2024.09</strong>
+                                                <span>이지디자인 컴퓨터 학원 멀티미디어<br>웹앱디자인&웹퍼블리셔 및 영상콘텐츠 제작과정 수료</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="work">
+                                        <h3><span>Work experience</span></h3>
+                                        <ul>
+                                            <li>
+                                                <strong>2021.04 ~ 2023.05</strong>
+                                                <span>청주24시고려동물메디컬센터 / 병원코디네이터</span>
+                                            </li>
+                                            <li>
+                                                <strong>2023.08 ~ 2024.02</strong>
+                                                <span>청주김안과의원 / 병원코디네이터, 진료 어시스트</span>
+                                            </li>
+                                        </ul>
+                                    </div>  
+                                    <div class="skill">
+                                        <h3><span>Skill</span></h3>
+                                        <ul>
+                                            <li class="html">html</li>
+                                            <li class="css">css</li>
+                                            <li class="jquery">jquery</li>
+                                            <li class="illustrator">illustrator</li>
+                                            <li class="photoshop">photoshop</li>
+                                            <li class="figma">figma</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>                       
+                    </div>
+                </div>
+            </section>
+            <section class="web" data-menu="web">
+                <div class="inner">
+                    <div class="wrapper">
+                        <div class="web_tit">
+                            <h2 class="s_txt">WEB</h2>
+                            <h2 class="b_txt">WEB</h2>
+                        </div>
+                        <div class="sub_tit" data-aos="fade-up">
+                            <div class="web_box">
+                                <div class="m_ico">
+                                    <ul>
+                                        <li class="m_mini">최소화</li>
+                                        <li class="m_size">이전크기</li>
+                                        <li class="m_close">닫기</li>
+                                    </ul>
+                                </div>
+                                <div class="detail">
+                                    <div class="d_inner">
+                                        <h2>코엑스 아쿠아리움</h2>
+                                        <div class="link">
+                                            <strong><a href="#n">홈페이지바로가기</a></strong>
+                                            <strong><a href="#n">디자인디테일</a></strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <div class="d_inner">
+                                        <h2>천안시립미술관</h2>
+                                        <div class="link">
+                                            <strong><a href="#n">홈페이지바로가기</a></strong>
+                                            <strong><a href="#n">디자인디테일</a></strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail">
+                                    <div class="d_inner">
+                                        <h2>한국농어촌희망재단</h2>
+                                        <div class="link">
+                                            <strong><a href="#n">홈페이지바로가기</a></strong>
+                                            <strong><a href="#n">디자인디테일</a></strong>
+                                            <strong><a href="#n">서브페이지 인사말</a></strong>
+                                            <strong><a href="#n">서브페이지 미션과비전</a></strong>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail x">
+                                    <div class="d_inner">
+                                        <h2>삼척시청</h2>
+                                        <div class="link">
+                                            <strong><a href="#n">홈페이지바로가기</a></strong>
+                                            <strong><a href="#n">디자인디테일</a></strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="design" data-menu="design">
+                <div class="inner">
+                    <div class="design_ctn">
+                        <div class="wrapper">
+                            <div class="design_tit">
+                                <h2 class="s_txt">DESIGN</h2>
+                                <h2 class="b_txt">DESIGN</h2>
+                            </div>
+                            <div class="d_tit" data-aos="fade-up">
+                                <h2><span>네이버OGQ스티커</span></h2>
+                                <a href="#n">스티커보러가기</a>
+                            </div>
+                            <ul data-aos="fade-up">
+                                <li>
+                                    <div class="d_list">
+                                        <strong>소박한 검정냥의 일상</strong>
+                                        <span>#고양이 #black #구분선 #귀여운 #posting</span>
+                                    </div>
+                                    <div class="photo"><img src="images/ogq_1.png" alt="스티커사진"></div>
+                                </li>
+                                <li>
+                                    <div class="d_list">
+                                        <strong>고양이의 일상 다이어리</strong>
+                                        <span>#일상 #daily #일기</span>
+                                    </div>
+                                    <div class="photo"><img src="images/ogq_2.png" alt="스티커사진"></div>
+                                </li>
+                            </ul>
+                            <div class="d_tit" data-aos="fade-up"></div>
+                                <h2><span>illust</span></h2>
+                            </div>
+                            <div class="photo" data-aos="fade-up"><img src="images/illust.png" alt="일러스트사진"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
 </body>
