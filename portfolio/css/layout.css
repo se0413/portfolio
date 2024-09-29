@@ -5,7 +5,7 @@
 }
 .header .gnb .gnb_wrap ul {
     display: flex;
-    margin-left: 20px;
+    margin-left: 60px;
 }
 .header .gnb .gnb_wrap ul li {
     font-family: 'ghanachoco';
